@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolling Dice Game</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+    }
+    .container{
+      background: wheat;
+      width: 60%;
+      min-width: 500px;
+      padding:10px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
+      /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(1, 164, 167) 0.1%, rgb(0, 71, 91) 94.2% );*/
+      background-image: linear-gradient( 109.6deg,  rgb(19, 111, 114) 11.2%, rgb(83, 199, 125) 91.1% );
+    }
+    header{
+      text-align: center;
+      
+    }
+  
+    header  .heading{
+      color:#F9DBBB;
+      font-size:35px;
+      padding:15px 0 0;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-weight: 800;
+    }
+    .message{
+      margin-top:50px;
+       font-size: 40px;
+       font-family: fantasy;
+  
+    }
+     main{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 250px;
+      
+     }
+     .dice1,.dice2 {
+    
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+   
+     footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:150px;
+     
+     }
+     .diceContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+     }
+     .diceContainer>p{
+      margin-top: 40px;
+     }
+    
+     button{
+      width: 50%;
+      font-size: 20px;
+      padding:10px 0;
+      border-radius: 8px;
+      border:none;
+      background-color: rgb(143, 51, 228);
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+      color:rgb(33, 30, 25);
+      background-image: linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
+     }
+     button:hover{
+      background-image: linear-gradient( 109.6deg,  rgba(247,253,166,1) 11.2%, rgba(128,255,221,1) 57.8%, rgba(255,128,249,1) 85.9% );;
+     }
+    .char {
+      color:#eb8bb9;
+     
+      font-size: 200px;
+     }
+     span{
+      color:#EFA3C8;
+      font-size:55px;
+     }
+     .mystyle {
+      background-image: linear-gradient( 109.6deg,  rgba(103,30,117,1) 11.2%, rgba(252,76,2,1) 91.1% );
+     }
+     @media only screen and (max-width: 450px) {
+      .container{
+      width: 100%;}
+      .message{
+      margin-top:30px;
+       font-size: 30px;
+       font-family: fantasy;
+  
+    }
+    header .heading{
+      font-size: 30px;
+    }
+    span{
+      font-size:44px;
+    }
+    .dice1,.dice2 {
+    
+    width: 60px;
+    height: 60px;}
+    .char {
+      font-size: 140px;
+     }}
+     @media only screen and (max-width: 350px) {
+      
+      .message{
+      margin-top:10px;
+       font-size: 24px;
+       font-family: fantasy;
+  
+    }
+    header .heading{
+      font-size: 20px;
+    }
+    span{
+      font-size:34px;
+    }
+    main{
+      justify-content: center;
+       height: 250px;
+      }
+    .dice1{
+      width: 60px;
+      margin-right: 10px;
+    }
+    .dice2 {
+      margin-left: 10px;
+    height: 60px;
+    }
+    .char {
+      font-size: 100px;
+     }
+     button{
+      width: 40%;
+    
+}}
+@media only screen and (max-width: 250px) {
+      
+      .message{
+     
+       font-size: 18px;
+       font-family: fantasy;
+  
+    }
+    header .heading{
+      font-size: 18px;
+    }
+    span{
+      font-size:28px;
+    }
+   
+  
+     button{
+      width: 30%;
+    
+}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="heading"><span>D</span>ice <span>R</span>olling <span>G</span>ame</p>
+    <p class="message animate__animated">Roll the dice</p>
+    </header>
+    <main>
+      <div class="diceContainer">
+        <div class="dice1"></div>
+         <p>Player-1</p>
+      </div>
+
+      <div class="diceContainer"> 
+      <div class="dice2"></div>
+      <p>Player-2</p>
+     </div>
+
+    </main>
+    <footer>
+      <button>Roll</button>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
